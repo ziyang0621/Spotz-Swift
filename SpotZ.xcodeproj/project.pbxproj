@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85905E741AAAB545009570D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E731AAAB545009570D0 /* AppDelegate.swift */; };
+		85905E761AAAB545009570D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E751AAAB545009570D0 /* ViewController.swift */; };
+		85905E791AAAB545009570D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85905E771AAAB545009570D0 /* Main.storyboard */; };
+		85905E7B1AAAB545009570D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85905E7A1AAAB545009570D0 /* Images.xcassets */; };
+		85905E7E1AAAB545009570D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85905E7C1AAAB545009570D0 /* LaunchScreen.xib */; };
+		85905E8A1AAAB546009570D0 /* SpotZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E891AAAB546009570D0 /* SpotZTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85905E841AAAB546009570D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85905E661AAAB545009570D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85905E6D1AAAB545009570D0;
+			remoteInfo = SpotZ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85905E6E1AAAB545009570D0 /* SpotZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85905E721AAAB545009570D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85905E731AAAB545009570D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85905E751AAAB545009570D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85905E781AAAB545009570D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85905E7A1AAAB545009570D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85905E7D1AAAB545009570D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		85905E831AAAB546009570D0 /* SpotZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85905E881AAAB546009570D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85905E891AAAB546009570D0 /* SpotZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotZTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85905E6B1AAAB545009570D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85905E801AAAB546009570D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85905E651AAAB545009570D0 = {
+			isa = PBXGroup;
+			children = (
+				85905E701AAAB545009570D0 /* SpotZ */,
+				85905E861AAAB546009570D0 /* SpotZTests */,
+				85905E6F1AAAB545009570D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85905E6F1AAAB545009570D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85905E6E1AAAB545009570D0 /* SpotZ.app */,
+				85905E831AAAB546009570D0 /* SpotZTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85905E701AAAB545009570D0 /* SpotZ */ = {
+			isa = PBXGroup;
+			children = (
+				85905E731AAAB545009570D0 /* AppDelegate.swift */,
+				85905E751AAAB545009570D0 /* ViewController.swift */,
+				85905E771AAAB545009570D0 /* Main.storyboard */,
+				85905E7A1AAAB545009570D0 /* Images.xcassets */,
+				85905E7C1AAAB545009570D0 /* LaunchScreen.xib */,
+				85905E711AAAB545009570D0 /* Supporting Files */,
+			);
+			path = SpotZ;
+			sourceTree = "<group>";
+		};
+		85905E711AAAB545009570D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85905E721AAAB545009570D0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85905E861AAAB546009570D0 /* SpotZTests */ = {
+			isa = PBXGroup;
+			children = (
+				85905E891AAAB546009570D0 /* SpotZTests.swift */,
+				85905E871AAAB546009570D0 /* Supporting Files */,
+			);
+			path = SpotZTests;
+			sourceTree = "<group>";
+		};
+		85905E871AAAB546009570D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85905E881AAAB546009570D0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85905E6D1AAAB545009570D0 /* SpotZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85905E8D1AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZ" */;
+			buildPhases = (
+				85905E6A1AAAB545009570D0 /* Sources */,
+				85905E6B1AAAB545009570D0 /* Frameworks */,
+				85905E6C1AAAB545009570D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotZ;
+			productName = SpotZ;
+			productReference = 85905E6E1AAAB545009570D0 /* SpotZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85905E821AAAB546009570D0 /* SpotZTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85905E901AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZTests" */;
+			buildPhases = (
+				85905E7F1AAAB546009570D0 /* Sources */,
+				85905E801AAAB546009570D0 /* Frameworks */,
+				85905E811AAAB546009570D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85905E851AAAB546009570D0 /* PBXTargetDependency */,
+			);
+			name = SpotZTests;
+			productName = SpotZTests;
+			productReference = 85905E831AAAB546009570D0 /* SpotZTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85905E661AAAB545009570D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Ziyang Tan";
+				TargetAttributes = {
+					85905E6D1AAAB545009570D0 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					85905E821AAAB546009570D0 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 85905E6D1AAAB545009570D0;
+					};
+				};
+			};
+			buildConfigurationList = 85905E691AAAB545009570D0 /* Build configuration list for PBXProject "SpotZ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85905E651AAAB545009570D0;
+			productRefGroup = 85905E6F1AAAB545009570D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85905E6D1AAAB545009570D0 /* SpotZ */,
+				85905E821AAAB546009570D0 /* SpotZTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85905E6C1AAAB545009570D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85905E791AAAB545009570D0 /* Main.storyboard in Resources */,
+				85905E7E1AAAB545009570D0 /* LaunchScreen.xib in Resources */,
+				85905E7B1AAAB545009570D0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85905E811AAAB546009570D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85905E6A1AAAB545009570D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85905E761AAAB545009570D0 /* ViewController.swift in Sources */,
+				85905E741AAAB545009570D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85905E7F1AAAB546009570D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85905E8A1AAAB546009570D0 /* SpotZTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85905E851AAAB546009570D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85905E6D1AAAB545009570D0 /* SpotZ */;
+			targetProxy = 85905E841AAAB546009570D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85905E771AAAB545009570D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85905E781AAAB545009570D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85905E7C1AAAB545009570D0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85905E7D1AAAB545009570D0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85905E8B1AAAB546009570D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85905E8C1AAAB546009570D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85905E8E1AAAB546009570D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpotZ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85905E8F1AAAB546009570D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpotZ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85905E911AAAB546009570D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpotZTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotZ.app/SpotZ";
+			};
+			name = Debug;
+		};
+		85905E921AAAB546009570D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpotZTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotZ.app/SpotZ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85905E691AAAB545009570D0 /* Build configuration list for PBXProject "SpotZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85905E8B1AAAB546009570D0 /* Debug */,
+				85905E8C1AAAB546009570D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85905E8D1AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85905E8E1AAAB546009570D0 /* Debug */,
+				85905E8F1AAAB546009570D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85905E901AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85905E911AAAB546009570D0 /* Debug */,
+				85905E921AAAB546009570D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85905E661AAAB545009570D0 /* Project object */;
+}
