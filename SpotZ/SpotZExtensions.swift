@@ -16,6 +16,50 @@ extension UIStoryboard {
     }
 }
 
+extension NSDate {
+    class func beginningOfDay(date: NSDate) -> NSDate {
+        var calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+        var comps = calendar!.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: date)
+        return calendar!.dateFromComponents(comps)!
+    }
+    
+    class func endOfDay(date: NSDate) -> NSDate {
+        var calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+        var comps = NSDateComponents()
+        comps.day = 1
+        var newDate = calendar!.dateByAddingComponents(comps, toDate: NSDate.beginningOfDay(date), options: nil)
+        newDate =  newDate?.dateByAddingTimeInterval(-1)
+        return newDate!
+    }
+    
+    func sameDay(date: NSDate) -> Bool {
+        var calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+        var compsOne = calendar!.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: date)
+        var newDate = calendar!.dateFromComponents(compsOne)
+        
+        var compsTwo = calendar!.components(.CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: self)
+        var newSelf = calendar!.dateFromComponents(compsTwo)
+        
+        var result = newDate?.isEqualToDate(newSelf!)
+        if  result! {
+            return true
+        }
+        return false
+    }
+    
+    func isEalier(date: NSDate) -> Bool {
+        return self.compare(date) == .OrderedAscending ? true : false
+    }
+    
+    func isLater(date: NSDate) -> Bool {
+        return self.compare(date) == .OrderedDescending ? true : false
+    }
+    
+    func isSame(date: NSDate) -> Bool {
+        return self.compare(date) == .OrderedSame ? true : false
+    }
+}
+
 extension UIColor {
     class func imageWithColor(color :UIColor) -> UIImage {
         var rect = CGRectMake(0, 0, 1, 1)

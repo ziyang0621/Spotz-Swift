@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C797689-C6A2-4961-B35B-0FDC63ED972C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpotZ</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1980F94A324ACBCDA3C44FF1744376A41480EF40</key>
+		<string>github.com:ziyang0621/Spotz-Swift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SpotZ.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1980F94A324ACBCDA3C44FF1744376A41480EF40</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:ziyang0621/Spotz-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1980F94A324ACBCDA3C44FF1744376A41480EF40</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1980F94A324ACBCDA3C44FF1744376A41480EF40</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SpotZ</string>
+		</dict>
+	</array>
+</dict>
+</plist>

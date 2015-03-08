@@ -5,73 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SpotZ" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkE-7x-4Wk">
-                                <rect key="frame" x="195" y="389" width="211" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.58674292049999999" blue="0.1772915954" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="D79-d5-VMB"/>
-                                    <constraint firstAttribute="height" constant="50" id="khP-0c-uEP"/>
-                                </constraints>
-                                <state key="normal" title="View my spots">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewLocations:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fg1-4k-Cag"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaJ-82-Wpk">
-                                <rect key="frame" x="195" y="275" width="211" height="50"/>
-                                <color key="backgroundColor" red="0.2901960784" green="0.72941176470000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7ha-HM-ZNx"/>
-                                    <constraint firstAttribute="width" constant="211" id="Cck-Bo-MIt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Remember my curernt spot">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="rememberLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mEV-Bw-Wnm"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OkE-7x-4Wk" firstAttribute="top" secondItem="FaJ-82-Wpk" secondAttribute="bottom" constant="64" id="8xZ-Mb-tB9"/>
-                            <constraint firstAttribute="centerY" secondItem="FaJ-82-Wpk" secondAttribute="centerY" id="9WG-5f-VbZ"/>
-                            <constraint firstAttribute="centerX" secondItem="OkE-7x-4Wk" secondAttribute="centerX" constant="-0.5" id="Dch-wa-Twl"/>
-                            <constraint firstItem="FaJ-82-Wpk" firstAttribute="centerX" secondItem="OkE-7x-4Wk" secondAttribute="centerX" id="Sij-tR-lny"/>
-                            <constraint firstAttribute="centerX" secondItem="FaJ-82-Wpk" secondAttribute="centerX" constant="-0.5" id="tl7-kZ-Reb"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Sij-tR-lny"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="B2x-xz-qhh"/>
-                    <connections>
-                        <segue destination="BUc-l8-pwh" kind="show" id="MnW-X4-kyU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1192" y="429"/>
-        </scene>
         <!--View Spots View Controller-->
         <scene sceneID="U68-hL-Rpx">
             <objects>
@@ -97,13 +30,14 @@
                             <constraint firstItem="ezy-4Q-Y3E" firstAttribute="leading" secondItem="P6c-U7-zvh" secondAttribute="leadingMargin" constant="-16" id="d57-Bg-378"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xFs-ub-OtF"/>
                     <connections>
                         <outlet property="spotsTableView" destination="ezy-4Q-Y3E" id="wc6-j6-1sl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rf-ve-EcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1895" y="429"/>
+            <point key="canvasLocation" x="1203" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pvA-zX-cFB">
@@ -116,7 +50,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="kwj-xU-MLm"/>
+                        <segue destination="BUc-l8-pwh" kind="relationship" relationship="rootViewController" id="lZD-FO-x8x"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19n-xg-ATO" userLabel="First Responder" sceneMemberID="firstResponder"/>

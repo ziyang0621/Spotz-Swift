@@ -20,7 +20,6 @@
 		854C48531AAAC84D006FF248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854C48521AAAC84D006FF248 /* Images.xcassets */; };
 		854C48571AAAC84D006FF248 /* SpotZ WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 854C483B1AAAC84D006FF248 /* SpotZ WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85905E741AAAB545009570D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E731AAAB545009570D0 /* AppDelegate.swift */; };
-		85905E761AAAB545009570D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E751AAAB545009570D0 /* ViewController.swift */; };
 		85905E791AAAB545009570D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85905E771AAAB545009570D0 /* Main.storyboard */; };
 		85905E7B1AAAB545009570D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85905E7A1AAAB545009570D0 /* Images.xcassets */; };
 		85905E7E1AAAB545009570D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85905E7C1AAAB545009570D0 /* LaunchScreen.xib */; };
@@ -92,7 +91,6 @@
 		85905E6E1AAAB545009570D0 /* SpotZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85905E721AAAB545009570D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85905E731AAAB545009570D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85905E751AAAB545009570D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85905E781AAAB545009570D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85905E7A1AAAB545009570D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		85905E7D1AAAB545009570D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 				85905E981AAAB992009570D0 /* Frameworks */,
 				85905E931AAAB918009570D0 /* SpotZ.entitlements */,
 				85905E731AAAB545009570D0 /* AppDelegate.swift */,
-				85905E751AAAB545009570D0 /* ViewController.swift */,
 				85217F131AAC047300E12061 /* ViewSpotsViewController.swift */,
 				850E3B9C1AAC07CB00D5C096 /* SpotTableViewCell.swift */,
 				85217F111AAC040000E12061 /* SpotZExtensions.swift */,
@@ -484,7 +481,6 @@
 				85217F141AAC047300E12061 /* ViewSpotsViewController.swift in Sources */,
 				850E3BA31AAC09DA00D5C096 /* NSDate+Utilities.m in Sources */,
 				85217F121AAC040000E12061 /* SpotZExtensions.swift in Sources */,
-				85905E761AAAB545009570D0 /* ViewController.swift in Sources */,
 				850E3B9E1AAC07CB00D5C096 /* SpotTableViewCell.swift in Sources */,
 				85905E741AAAB545009570D0 /* AppDelegate.swift in Sources */,
 			);
