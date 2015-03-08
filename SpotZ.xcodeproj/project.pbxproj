@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850E3B9E1AAC07CB00D5C096 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850E3B9C1AAC07CB00D5C096 /* SpotTableViewCell.swift */; };
+		850E3B9F1AAC07CB00D5C096 /* SpotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 850E3B9D1AAC07CB00D5C096 /* SpotTableViewCell.xib */; };
+		850E3BA31AAC09DA00D5C096 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 850E3BA21AAC09DA00D5C096 /* NSDate+Utilities.m */; };
+		85217F121AAC040000E12061 /* SpotZExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85217F111AAC040000E12061 /* SpotZExtensions.swift */; };
+		85217F141AAC047300E12061 /* ViewSpotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85217F131AAC047300E12061 /* ViewSpotsViewController.swift */; };
+		854C48411AAAC84D006FF248 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C48401AAAC84D006FF248 /* InterfaceController.swift */; };
+		854C48431AAAC84D006FF248 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C48421AAAC84D006FF248 /* NotificationController.swift */; };
+		854C48451AAAC84D006FF248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854C48441AAAC84D006FF248 /* Images.xcassets */; };
+		854C48491AAAC84D006FF248 /* SpotZ WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 854C48481AAAC84D006FF248 /* SpotZ WatchKit App.app */; };
+		854C48511AAAC84D006FF248 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854C484F1AAAC84D006FF248 /* Interface.storyboard */; };
+		854C48531AAAC84D006FF248 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854C48521AAAC84D006FF248 /* Images.xcassets */; };
+		854C48571AAAC84D006FF248 /* SpotZ WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 854C483B1AAAC84D006FF248 /* SpotZ WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85905E741AAAB545009570D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E731AAAB545009570D0 /* AppDelegate.swift */; };
 		85905E761AAAB545009570D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E751AAAB545009570D0 /* ViewController.swift */; };
 		85905E791AAAB545009570D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85905E771AAAB545009570D0 /* Main.storyboard */; };
 		85905E7B1AAAB545009570D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85905E7A1AAAB545009570D0 /* Images.xcassets */; };
 		85905E7E1AAAB545009570D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85905E7C1AAAB545009570D0 /* LaunchScreen.xib */; };
 		85905E8A1AAAB546009570D0 /* SpotZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E891AAAB546009570D0 /* SpotZTests.swift */; };
+		85905E951AAAB980009570D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85905E941AAAB980009570D0 /* CoreLocation.framework */; };
+		85905E971AAAB986009570D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85905E961AAAB986009570D0 /* MapKit.framework */; };
+		D3300FAC7733BD6670939A75 /* libPods-SpotZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84078079FC12701B295ED3CF /* libPods-SpotZ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		854C484A1AAAC84D006FF248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85905E661AAAB545009570D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 854C48471AAAC84D006FF248;
+			remoteInfo = "SpotZ WatchKit App";
+		};
+		854C48541AAAC84D006FF248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85905E661AAAB545009570D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 854C483A1AAAC84D006FF248;
+			remoteInfo = "SpotZ WatchKit Extension";
+		};
 		85905E841AAAB546009570D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 85905E661AAAB545009570D0 /* Project object */;
@@ -25,7 +54,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		854C48561AAAC84D006FF248 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				854C48571AAAC84D006FF248 /* SpotZ WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4995FAEAA70836BB09A10446 /* Pods-SpotZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotZ/Pods-SpotZ.release.xcconfig"; sourceTree = "<group>"; };
+		723806EBFE7A15A98D313C45 /* Pods-SpotZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotZ/Pods-SpotZ.debug.xcconfig"; sourceTree = "<group>"; };
+		84078079FC12701B295ED3CF /* libPods-SpotZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpotZ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		850E3B9C1AAC07CB00D5C096 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		850E3B9D1AAC07CB00D5C096 /* SpotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpotTableViewCell.xib; sourceTree = "<group>"; };
+		850E3BA11AAC09DA00D5C096 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		850E3BA21AAC09DA00D5C096 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		85217F111AAC040000E12061 /* SpotZExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotZExtensions.swift; sourceTree = "<group>"; };
+		85217F131AAC047300E12061 /* ViewSpotsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSpotsViewController.swift; sourceTree = "<group>"; };
+		854C483B1AAAC84D006FF248 /* SpotZ WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpotZ WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		854C483E1AAAC84D006FF248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		854C483F1AAAC84D006FF248 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		854C48401AAAC84D006FF248 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		854C48421AAAC84D006FF248 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		854C48441AAAC84D006FF248 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		854C48481AAAC84D006FF248 /* SpotZ WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpotZ WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		854C484E1AAAC84D006FF248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		854C48501AAAC84D006FF248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		854C48521AAAC84D006FF248 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		857401B81AABE57C00985A7D /* SpotZ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotZ-Bridging-Header.h"; sourceTree = "<group>"; };
 		85905E6E1AAAB545009570D0 /* SpotZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85905E721AAAB545009570D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85905E731AAAB545009570D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,13 +99,26 @@
 		85905E831AAAB546009570D0 /* SpotZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85905E881AAAB546009570D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85905E891AAAB546009570D0 /* SpotZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotZTests.swift; sourceTree = "<group>"; };
+		85905E931AAAB918009570D0 /* SpotZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SpotZ.entitlements; sourceTree = "<group>"; };
+		85905E941AAAB980009570D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		85905E961AAAB986009570D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		854C48381AAAC84D006FF248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85905E6B1AAAB545009570D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85905E971AAAB986009570D0 /* MapKit.framework in Frameworks */,
+				85905E951AAAB980009570D0 /* CoreLocation.framework in Frameworks */,
+				D3300FAC7733BD6670939A75 /* libPods-SpotZ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +132,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303AD416EBAC0BEACC27E295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				723806EBFE7A15A98D313C45 /* Pods-SpotZ.debug.xcconfig */,
+				4995FAEAA70836BB09A10446 /* Pods-SpotZ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		850E3BA01AAC09C200D5C096 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				850E3BA11AAC09DA00D5C096 /* NSDate+Utilities.h */,
+				850E3BA21AAC09DA00D5C096 /* NSDate+Utilities.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		854C483C1AAAC84D006FF248 /* SpotZ WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				854C48401AAAC84D006FF248 /* InterfaceController.swift */,
+				854C48421AAAC84D006FF248 /* NotificationController.swift */,
+				854C48441AAAC84D006FF248 /* Images.xcassets */,
+				854C483D1AAAC84D006FF248 /* Supporting Files */,
+			);
+			path = "SpotZ WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		854C483D1AAAC84D006FF248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				854C483E1AAAC84D006FF248 /* Info.plist */,
+				854C483F1AAAC84D006FF248 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		854C484C1AAAC84D006FF248 /* SpotZ WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				854C484F1AAAC84D006FF248 /* Interface.storyboard */,
+				854C48521AAAC84D006FF248 /* Images.xcassets */,
+				854C484D1AAAC84D006FF248 /* Supporting Files */,
+			);
+			path = "SpotZ WatchKit App";
+			sourceTree = "<group>";
+		};
+		854C484D1AAAC84D006FF248 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				854C484E1AAAC84D006FF248 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		85905E651AAAB545009570D0 = {
 			isa = PBXGroup;
 			children = (
+				854C483C1AAAC84D006FF248 /* SpotZ WatchKit Extension */,
+				854C484C1AAAC84D006FF248 /* SpotZ WatchKit App */,
 				85905E701AAAB545009570D0 /* SpotZ */,
 				85905E861AAAB546009570D0 /* SpotZTests */,
 				85905E6F1AAAB545009570D0 /* Products */,
+				303AD416EBAC0BEACC27E295 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +205,8 @@
 			children = (
 				85905E6E1AAAB545009570D0 /* SpotZ.app */,
 				85905E831AAAB546009570D0 /* SpotZTests.xctest */,
+				854C483B1AAAC84D006FF248 /* SpotZ WatchKit Extension.appex */,
+				854C48481AAAC84D006FF248 /* SpotZ WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +214,20 @@
 		85905E701AAAB545009570D0 /* SpotZ */ = {
 			isa = PBXGroup;
 			children = (
+				850E3BA01AAC09C200D5C096 /* Helper */,
+				85905E981AAAB992009570D0 /* Frameworks */,
+				85905E931AAAB918009570D0 /* SpotZ.entitlements */,
 				85905E731AAAB545009570D0 /* AppDelegate.swift */,
 				85905E751AAAB545009570D0 /* ViewController.swift */,
+				85217F131AAC047300E12061 /* ViewSpotsViewController.swift */,
+				850E3B9C1AAC07CB00D5C096 /* SpotTableViewCell.swift */,
+				85217F111AAC040000E12061 /* SpotZExtensions.swift */,
+				850E3B9D1AAC07CB00D5C096 /* SpotTableViewCell.xib */,
 				85905E771AAAB545009570D0 /* Main.storyboard */,
 				85905E7A1AAAB545009570D0 /* Images.xcassets */,
 				85905E7C1AAAB545009570D0 /* LaunchScreen.xib */,
 				85905E711AAAB545009570D0 /* Supporting Files */,
+				857401B81AABE57C00985A7D /* SpotZ-Bridging-Header.h */,
 			);
 			path = SpotZ;
 			sourceTree = "<group>";
@@ -112,20 +257,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		85905E981AAAB992009570D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85905E961AAAB986009570D0 /* MapKit.framework */,
+				85905E941AAAB980009570D0 /* CoreLocation.framework */,
+				84078079FC12701B295ED3CF /* libPods-SpotZ.a */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85905E6D1AAAB545009570D0 /* SpotZ */ = {
+		854C483A1AAAC84D006FF248 /* SpotZ WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85905E8D1AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZ" */;
+			buildConfigurationList = 854C485B1AAAC84D006FF248 /* Build configuration list for PBXNativeTarget "SpotZ WatchKit Extension" */;
 			buildPhases = (
-				85905E6A1AAAB545009570D0 /* Sources */,
-				85905E6B1AAAB545009570D0 /* Frameworks */,
-				85905E6C1AAAB545009570D0 /* Resources */,
+				854C48371AAAC84D006FF248 /* Sources */,
+				854C48381AAAC84D006FF248 /* Frameworks */,
+				854C48391AAAC84D006FF248 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				854C484B1AAAC84D006FF248 /* PBXTargetDependency */,
+			);
+			name = "SpotZ WatchKit Extension";
+			productName = "SpotZ WatchKit Extension";
+			productReference = 854C483B1AAAC84D006FF248 /* SpotZ WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		854C48471AAAC84D006FF248 /* SpotZ WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854C48581AAAC84D006FF248 /* Build configuration list for PBXNativeTarget "SpotZ WatchKit App" */;
+			buildPhases = (
+				854C48461AAAC84D006FF248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpotZ WatchKit App";
+			productName = "SpotZ WatchKit App";
+			productReference = 854C48481AAAC84D006FF248 /* SpotZ WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		85905E6D1AAAB545009570D0 /* SpotZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85905E8D1AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZ" */;
+			buildPhases = (
+				A6C68C163A3741E715D5BFEA /* Check Pods Manifest.lock */,
+				85905E6A1AAAB545009570D0 /* Sources */,
+				85905E6B1AAAB545009570D0 /* Frameworks */,
+				85905E6C1AAAB545009570D0 /* Resources */,
+				854C48561AAAC84D006FF248 /* Embed App Extensions */,
+				9803AC0A6BE3A002C56114AC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				854C48551AAAC84D006FF248 /* PBXTargetDependency */,
 			);
 			name = SpotZ;
 			productName = SpotZ;
@@ -159,8 +352,21 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Ziyang Tan";
 				TargetAttributes = {
+					854C483A1AAAC84D006FF248 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = P3NF73TYX4;
+					};
+					854C48471AAAC84D006FF248 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					85905E6D1AAAB545009570D0 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = P3NF73TYX4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					85905E821AAAB546009570D0 = {
 						CreatedOnToolsVersion = 6.2;
@@ -183,11 +389,31 @@
 			targets = (
 				85905E6D1AAAB545009570D0 /* SpotZ */,
 				85905E821AAAB546009570D0 /* SpotZTests */,
+				854C483A1AAAC84D006FF248 /* SpotZ WatchKit Extension */,
+				854C48471AAAC84D006FF248 /* SpotZ WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		854C48391AAAC84D006FF248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854C48451AAAC84D006FF248 /* Images.xcassets in Resources */,
+				854C48491AAAC84D006FF248 /* SpotZ WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		854C48461AAAC84D006FF248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854C48511AAAC84D006FF248 /* Interface.storyboard in Resources */,
+				854C48531AAAC84D006FF248 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85905E6C1AAAB545009570D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +421,7 @@
 				85905E791AAAB545009570D0 /* Main.storyboard in Resources */,
 				85905E7E1AAAB545009570D0 /* LaunchScreen.xib in Resources */,
 				85905E7B1AAAB545009570D0 /* Images.xcassets in Resources */,
+				850E3B9F1AAC07CB00D5C096 /* SpotTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +434,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9803AC0A6BE3A002C56114AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpotZ/Pods-SpotZ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C68C163A3741E715D5BFEA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		854C48371AAAC84D006FF248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854C48431AAAC84D006FF248 /* NotificationController.swift in Sources */,
+				854C48411AAAC84D006FF248 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85905E6A1AAAB545009570D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85217F141AAC047300E12061 /* ViewSpotsViewController.swift in Sources */,
+				850E3BA31AAC09DA00D5C096 /* NSDate+Utilities.m in Sources */,
+				85217F121AAC040000E12061 /* SpotZExtensions.swift in Sources */,
 				85905E761AAAB545009570D0 /* ViewController.swift in Sources */,
+				850E3B9E1AAC07CB00D5C096 /* SpotTableViewCell.swift in Sources */,
 				85905E741AAAB545009570D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +501,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		854C484B1AAAC84D006FF248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 854C48471AAAC84D006FF248 /* SpotZ WatchKit App */;
+			targetProxy = 854C484A1AAAC84D006FF248 /* PBXContainerItemProxy */;
+		};
+		854C48551AAAC84D006FF248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 854C483A1AAAC84D006FF248 /* SpotZ WatchKit Extension */;
+			targetProxy = 854C48541AAAC84D006FF248 /* PBXContainerItemProxy */;
+		};
 		85905E851AAAB546009570D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 85905E6D1AAAB545009570D0 /* SpotZ */;
@@ -236,6 +519,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		854C484F1AAAC84D006FF248 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				854C48501AAAC84D006FF248 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		85905E771AAAB545009570D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -255,6 +546,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		854C48591AAAC84D006FF248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SpotZ_WatchKit_Extension;
+				INFOPLIST_FILE = "SpotZ WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		854C485A1AAAC84D006FF248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SpotZ_WatchKit_Extension;
+				INFOPLIST_FILE = "SpotZ WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		854C485C1AAAC84D006FF248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpotZ WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		854C485D1AAAC84D006FF248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "SpotZ WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		85905E8B1AAAB546009570D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,21 +683,38 @@
 		};
 		85905E8E1AAAB546009570D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 723806EBFE7A15A98D313C45 /* Pods-SpotZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SpotZ/SpotZ.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SpotZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotZ/SpotZ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		85905E8F1AAAB546009570D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4995FAEAA70836BB09A10446 /* Pods-SpotZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SpotZ/SpotZ.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SpotZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotZ/SpotZ-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -389,6 +755,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		854C48581AAAC84D006FF248 /* Build configuration list for PBXNativeTarget "SpotZ WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854C48591AAAC84D006FF248 /* Debug */,
+				854C485A1AAAC84D006FF248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		854C485B1AAAC84D006FF248 /* Build configuration list for PBXNativeTarget "SpotZ WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854C485C1AAAC84D006FF248 /* Debug */,
+				854C485D1AAAC84D006FF248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		85905E691AAAB545009570D0 /* Build configuration list for PBXProject "SpotZ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -405,6 +789,7 @@
 				85905E8F1AAAB546009570D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85905E901AAAB546009570D0 /* Build configuration list for PBXNativeTarget "SpotZTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +798,7 @@
 				85905E921AAAB546009570D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

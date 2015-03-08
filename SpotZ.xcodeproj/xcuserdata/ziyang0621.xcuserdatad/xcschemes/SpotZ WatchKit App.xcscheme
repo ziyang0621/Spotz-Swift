@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "854C48471AAAC84D006FF248"
+               BuildableName = "SpotZ WatchKit App.app"
+               BlueprintName = "SpotZ WatchKit App"
+               ReferencedContainer = "container:SpotZ.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "85905E6D1AAAB545009570D0"
                BuildableName = "SpotZ.app"
                BlueprintName = "SpotZ"
@@ -23,14 +37,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85905E821AAAB546009570D0"
-               BuildableName = "SpotZTests.xctest"
-               BlueprintName = "SpotZTests"
+               BlueprintIdentifier = "854C483A1AAAC84D006FF248"
+               BuildableName = "SpotZ WatchKit Extension.appex"
+               BlueprintName = "SpotZ WatchKit Extension"
                ReferencedContainer = "container:SpotZ.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85905E821AAAB546009570D0"
-               BuildableName = "SpotZTests.xctest"
-               BlueprintName = "SpotZTests"
-               ReferencedContainer = "container:SpotZ.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85905E6D1AAAB545009570D0"
-            BuildableName = "SpotZ.app"
-            BlueprintName = "SpotZ"
+            BlueprintIdentifier = "854C48471AAAC84D006FF248"
+            BuildableName = "SpotZ WatchKit App.app"
+            BlueprintName = "SpotZ WatchKit App"
             ReferencedContainer = "container:SpotZ.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/SpotZ">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85905E6D1AAAB545009570D0"
-            BuildableName = "SpotZ.app"
-            BlueprintName = "SpotZ"
+            BlueprintIdentifier = "854C48471AAAC84D006FF248"
+            BuildableName = "SpotZ WatchKit App.app"
+            BlueprintName = "SpotZ WatchKit App"
             ReferencedContainer = "container:SpotZ.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "854C48471AAAC84D006FF248"
+            BuildableName = "SpotZ WatchKit App.app"
+            BlueprintName = "SpotZ WatchKit App"
+            ReferencedContainer = "container:SpotZ.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/SpotZ">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85905E6D1AAAB545009570D0"
-            BuildableName = "SpotZ.app"
-            BlueprintName = "SpotZ"
+            BlueprintIdentifier = "854C48471AAAC84D006FF248"
+            BuildableName = "SpotZ WatchKit App.app"
+            BlueprintName = "SpotZ WatchKit App"
             ReferencedContainer = "container:SpotZ.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "854C48471AAAC84D006FF248"
+            BuildableName = "SpotZ WatchKit App.app"
+            BlueprintName = "SpotZ WatchKit App"
+            ReferencedContainer = "container:SpotZ.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
