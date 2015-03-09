@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SpotZ_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Add Current Spot" id="lO9-mx-uia">
+                            <color key="backgroundColor" red="0.2901960784" green="0.72941176470000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="addSpot" destination="AgC-eL-Hgc" id="Cc8-6f-5v2"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="h2Q-56-hFP">
+                            <items>
+                                <tableRow identifier="TableRowController" id="0kV-R5-5tS" customClass="TableRowController" customModule="SpotZ_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="9xw-sm-Zsl">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" numberOfLines="2" id="0yO-A1-xxP">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="placeNameLabel" destination="0yO-A1-xxP" id="ySD-CH-hU8"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="spotsTable" destination="h2Q-56-hFP" id="oPm-Ww-j2T"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--MapInterfaceController-->
+        <scene sceneID="fAd-79-5Dj">
+            <objects>
+                <controller identifier="MapInterfaceController" id="uvU-S0-b48" customClass="MapInterfaceController" customModule="SpotZ_WatchKit_Extension">
+                    <items>
+                        <map width="1" height="1" alignment="left" id="3mD-Ns-Voh"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="3mD-Ns-Voh" id="p1r-nu-NMn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="451" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +74,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SpotZ_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

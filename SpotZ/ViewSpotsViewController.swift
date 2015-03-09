@@ -54,7 +54,11 @@ class ViewSpotsViewController: UIViewController, UITableViewDelegate, UITableVie
                         placeName += streetName
                     }
                     if let cityName = placemark.addressDictionary["City"] as String? {
-                        placeName += ", " + cityName
+                        if placeName == "" {
+                            placeName += cityName
+                        } else {
+                            placeName += ", " + cityName
+                        }
                     }
                 }
             } else {

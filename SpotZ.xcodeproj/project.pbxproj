@@ -26,6 +26,8 @@
 		85905E8A1AAAB546009570D0 /* SpotZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E891AAAB546009570D0 /* SpotZTests.swift */; };
 		85905E951AAAB980009570D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85905E941AAAB980009570D0 /* CoreLocation.framework */; };
 		85905E971AAAB986009570D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85905E961AAAB986009570D0 /* MapKit.framework */; };
+		85ABC2D91AAE521F00559529 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ABC2D81AAE521F00559529 /* TableRowController.swift */; };
+		85B40BFD1AAE5CD800B49589 /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B40BFC1AAE5CD800B49589 /* MapInterfaceController.swift */; };
 		85DBC1861AAD3EC8001F13C9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBC1851AAD3EC8001F13C9 /* MapViewController.swift */; };
 		D3300FAC7733BD6670939A75 /* libPods-SpotZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84078079FC12701B295ED3CF /* libPods-SpotZ.a */; };
 /* End PBXBuildFile section */
@@ -101,6 +103,9 @@
 		85905E931AAAB918009570D0 /* SpotZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SpotZ.entitlements; sourceTree = "<group>"; };
 		85905E941AAAB980009570D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		85905E961AAAB986009570D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		85A27BC11AAE570400FA1693 /* SpotZ WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SpotZ WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		85ABC2D81AAE521F00559529 /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		85B40BFC1AAE5CD800B49589 /* MapInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
 		85DBC1851AAD3EC8001F13C9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,8 +158,11 @@
 		854C483C1AAAC84D006FF248 /* SpotZ WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				85A27BC11AAE570400FA1693 /* SpotZ WatchKit Extension.entitlements */,
 				854C48401AAAC84D006FF248 /* InterfaceController.swift */,
+				85B40BFC1AAE5CD800B49589 /* MapInterfaceController.swift */,
 				854C48421AAAC84D006FF248 /* NotificationController.swift */,
+				85ABC2D81AAE521F00559529 /* TableRowController.swift */,
 				854C48441AAAC84D006FF248 /* Images.xcassets */,
 				854C483D1AAAC84D006FF248 /* Supporting Files */,
 			);
@@ -355,6 +363,11 @@
 					854C483A1AAAC84D006FF248 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = P3NF73TYX4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					854C48471AAAC84D006FF248 = {
 						CreatedOnToolsVersion = 6.2;
@@ -473,6 +486,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				854C48431AAAC84D006FF248 /* NotificationController.swift in Sources */,
+				85ABC2D91AAE521F00559529 /* TableRowController.swift in Sources */,
+				85B40BFD1AAE5CD800B49589 /* MapInterfaceController.swift in Sources */,
 				854C48411AAAC84D006FF248 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +594,7 @@
 		854C485C1AAAC84D006FF248 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SpotZ WatchKit Extension/SpotZ WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -588,6 +604,7 @@
 				INFOPLIST_FILE = "SpotZ WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -595,11 +612,13 @@
 		854C485D1AAAC84D006FF248 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SpotZ WatchKit Extension/SpotZ WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SpotZ WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
