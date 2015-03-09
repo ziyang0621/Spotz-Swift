@@ -30,6 +30,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         let location = CLLocation(latitude: coordinate!.latitude, longitude: coordinate!.longitude)
         
+        KVNProgress.show()
         let geocoder = CLGeocoder()
         geocoder.reverseGeocodeLocation(location, completionHandler: { (placemarkers, error) -> Void in
             if error == nil {
@@ -115,9 +116,34 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {
         if firstLoadFinished {
             showRegon(thePlaceMark!)
+            KVNProgress.dismiss()
         }
     }
 
+    @IBAction func openButtonPressed(sender: AnyObject) {
+        let openMapsActionSheet = UIAlertController(title: "Open in Maps", message: "Choose a maps application", preferredStyle: .ActionSheet)
+        openMapsActionSheet.addAction(UIAlertAction(title: "Apple Maps", style: .Default, handler: { (action: UIAlertAction!) -> Void in
+            var placemark = MKPlacemark(placemark: self.thePlaceMark)
+            var item = MKMapItem(placemark: placemark)
+            let options = [MKLaunchOptionsDirectionsModeKey:
+                MKLaunchOptionsDirectionsModeWalking,
+                MKLaunchOptionsShowsTrafficKey: true]
+            item.openInMapsWithLaunchOptions(options)
+        }))
+        openMapsActionSheet.addAction(UIAlertAction(title: "Google Maps", style: .Default, handler: { (action: UIAlertAction!) -> Void in
+            if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"comgooglemaps://")!)) {
+                UIApplication.sharedApplication().openURL(NSURL(string:
+                    "comgooglemaps://?saddr=\(self.mapView.userLocation.coordinate.latitude),\(self.mapView.userLocation.coordinate.longitude)&daddr=\(self.thePlaceMark!.location.coordinate.latitude),\(self.thePlaceMark!.location.coordinate.longitude)&directionsmode=walking")!)
+            } else {
+                UIApplication.sharedApplication().openURL(NSURL(string:
+                    "http://maps.google.com/maps?saddr=\(self.mapView.userLocation.coordinate.latitude),\(self.mapView.userLocation.coordinate.longitude)&daddr=\(self.thePlaceMark!.location.coordinate.latitude),\(self.thePlaceMark!.location.coordinate.longitude)&directionsmode=walking")!)
+            }
+        }))
+        openMapsActionSheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        presentViewController(openMapsActionSheet, animated: true, completion: nil)
+       
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -63,6 +63,9 @@
                                 <state key="normal" title="Open in...">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openButtonPressed:" destination="rwI-qW-H9g" eventType="touchUpInside" id="ZFz-2l-Lrc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
