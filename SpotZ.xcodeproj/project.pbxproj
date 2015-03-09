@@ -26,6 +26,7 @@
 		85905E8A1AAAB546009570D0 /* SpotZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85905E891AAAB546009570D0 /* SpotZTests.swift */; };
 		85905E951AAAB980009570D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85905E941AAAB980009570D0 /* CoreLocation.framework */; };
 		85905E971AAAB986009570D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85905E961AAAB986009570D0 /* MapKit.framework */; };
+		85DBC1861AAD3EC8001F13C9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBC1851AAD3EC8001F13C9 /* MapViewController.swift */; };
 		D3300FAC7733BD6670939A75 /* libPods-SpotZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84078079FC12701B295ED3CF /* libPods-SpotZ.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		85905E931AAAB918009570D0 /* SpotZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SpotZ.entitlements; sourceTree = "<group>"; };
 		85905E941AAAB980009570D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		85905E961AAAB986009570D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		85DBC1851AAD3EC8001F13C9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				85905E731AAAB545009570D0 /* AppDelegate.swift */,
 				85217F131AAC047300E12061 /* ViewSpotsViewController.swift */,
 				850E3B9C1AAC07CB00D5C096 /* SpotTableViewCell.swift */,
+				85DBC1851AAD3EC8001F13C9 /* MapViewController.swift */,
 				85217F111AAC040000E12061 /* SpotZExtensions.swift */,
 				850E3B9D1AAC07CB00D5C096 /* SpotTableViewCell.xib */,
 				85905E771AAAB545009570D0 /* Main.storyboard */,
@@ -479,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85217F141AAC047300E12061 /* ViewSpotsViewController.swift in Sources */,
+				85DBC1861AAD3EC8001F13C9 /* MapViewController.swift in Sources */,
 				850E3BA31AAC09DA00D5C096 /* NSDate+Utilities.m in Sources */,
 				85217F121AAC040000E12061 /* SpotZExtensions.swift in Sources */,
 				850E3B9E1AAC07CB00D5C096 /* SpotTableViewCell.swift in Sources */,

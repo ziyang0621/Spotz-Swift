@@ -46,7 +46,7 @@ class ViewSpotsViewController: UIViewController, UITableViewDelegate, UITableVie
         
         var placeName = ""
         
-        var geocode = CLGeocoder()
+        let geocode = CLGeocoder()
         geocode.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
             if error == nil {
                 if let placemark = placemarks?[0] as? CLPlacemark {
@@ -133,6 +133,17 @@ class ViewSpotsViewController: UIViewController, UITableViewDelegate, UITableVie
             defaults?.synchronize()
             spotsTableView.reloadData()
         }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let dict = myLocations[indexPath.row] as NSMutableDictionary
+        let lat = dict.objectForKey("lat") as Double
+        let lng = dict.objectForKey("lng") as Double
+        let coordinate = CLLocationCoordinate2DMake(lat, lng)
+        
+        var mapVC = UIStoryboard.mapViewController()
+        mapVC?.coordinate = coordinate
+        self.navigationController?.pushViewController(mapVC!, animated: true)
     }
     
     /*

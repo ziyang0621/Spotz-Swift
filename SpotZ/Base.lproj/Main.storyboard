@@ -33,11 +33,62 @@
                     <navigationItem key="navigationItem" id="xFs-ub-OtF"/>
                     <connections>
                         <outlet property="spotsTableView" destination="ezy-4Q-Y3E" id="wc6-j6-1sl"/>
+                        <segue destination="rwI-qW-H9g" kind="show" id="Ekk-Y3-bLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rf-ve-EcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1203" y="429"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Fat-ll-4l3">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="rwI-qW-H9g" customClass="MapViewController" customModule="SpotZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HjD-rz-2EF"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Ko-CW-cE8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uLg-tT-MC4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yKW-yT-04D">
+                                <rect key="frame" x="0.0" y="64" width="600" height="500"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxK-ma-MO6">
+                                <rect key="frame" x="0.0" y="564" width="600" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="nS9-9y-sqT"/>
+                                </constraints>
+                                <state key="normal" title="Open in...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yKW-yT-04D" firstAttribute="leading" secondItem="uLg-tT-MC4" secondAttribute="leadingMargin" constant="-16" id="ELf-v3-Xfy"/>
+                            <constraint firstItem="NxK-ma-MO6" firstAttribute="top" secondItem="yKW-yT-04D" secondAttribute="bottom" id="OX6-rD-PnW"/>
+                            <constraint firstItem="NxK-ma-MO6" firstAttribute="leading" secondItem="uLg-tT-MC4" secondAttribute="leadingMargin" constant="-16" id="USh-fn-ovV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yKW-yT-04D" secondAttribute="trailing" constant="-16" id="aR4-gS-3f0"/>
+                            <constraint firstItem="8Ko-CW-cE8" firstAttribute="top" secondItem="yKW-yT-04D" secondAttribute="bottom" id="fBC-WH-yVF"/>
+                            <constraint firstItem="yKW-yT-04D" firstAttribute="top" secondItem="HjD-rz-2EF" secondAttribute="bottom" id="hRo-y5-66m"/>
+                            <constraint firstItem="8Ko-CW-cE8" firstAttribute="top" secondItem="NxK-ma-MO6" secondAttribute="bottom" id="hZf-8S-aXX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NxK-ma-MO6" secondAttribute="trailing" constant="-16" id="qhQ-Vr-o1j"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fBC-WH-yVF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="yKW-yT-04D" id="xWF-fv-bB6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5q-Rh-u2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pvA-zX-cFB">
