@@ -20,6 +20,10 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     
+    var selectedTableCell = false
+    
+    var selectedTableCellRow = 0
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -37,39 +41,54 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
         println(locations.last)
         let location = locations.last as CLLocation
         
-        var placeName = ""
-        
-        let geocode = CLGeocoder()
-        geocode.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
-            if error == nil {
-                if let placemark = placemarks?[0] as? CLPlacemark {
-                    if let streetName = placemark.addressDictionary["Street"] as String? {
-                        placeName += streetName
-                    }
-                    if let cityName = placemark.addressDictionary["City"] as String? {
-                        if placeName == "" {
-                            placeName += cityName
-                        } else {
-                            placeName += ", " + cityName
+        if selectedTableCell {
+            
+            let dict = myLocations[selectedTableCellRow] as NSMutableDictionary
+            let placeLat = dict.objectForKey("lat") as Double
+            let placeLng = dict.objectForKey("lng") as Double
+            let userLat = location.coordinate.latitude
+            let userLng = location.coordinate.longitude
+            
+            selectedTableCell = false
+
+            pushControllerWithName("MapInterfaceController",
+                context: ["placeLat":placeLat, "placeLng": placeLng, "userLat": userLat, "userLng": userLng])
+            
+        } else {
+            var placeName = ""
+            
+            let geocode = CLGeocoder()
+            geocode.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
+                if error == nil {
+                    if let placemark = placemarks?[0] as? CLPlacemark {
+                        if let streetName = placemark.addressDictionary["Street"] as String? {
+                            placeName += streetName
+                        }
+                        if let cityName = placemark.addressDictionary["City"] as String? {
+                            if placeName == "" {
+                                placeName += cityName
+                            } else {
+                                placeName += ", " + cityName
+                            }
                         }
                     }
+                } else {
+                    println(error)
                 }
-            } else {
-                println(error)
-            }
-            
-            let dict = NSMutableDictionary()
-            dict["lat"] = location.coordinate.latitude
-            dict["lng"] = location.coordinate.longitude
-            dict["time"] = NSDate()
-            dict["placeName"] = placeName
-            self.myLocations.insert(dict, atIndex: 0)
-            self.defaults?.setObject(self.myLocations, forKey: "locations")
-            self.defaults?.synchronize()
-            
-            self.loadTableData()
-        })
+                
+                let dict = NSMutableDictionary()
+                dict["lat"] = location.coordinate.latitude
+                dict["lng"] = location.coordinate.longitude
+                dict["time"] = NSDate()
+                dict["placeName"] = placeName
+                self.myLocations.insert(dict, atIndex: 0)
+                self.defaults?.setObject(self.myLocations, forKey: "locations")
+                self.defaults?.synchronize()
+                
+                self.loadTableData()
+            })
 
+        }
     }
     
     func loadTableData() {
@@ -85,11 +104,9 @@ class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     }
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        let dict = myLocations[rowIndex] as NSMutableDictionary
-        let lat = dict.objectForKey("lat") as Double
-        let lng = dict.objectForKey("lng") as Double
-
-        pushControllerWithName("MapInterfaceController", context: ["lat":lat, "lng": lng])
+        selectedTableCellRow = rowIndex
+        selectedTableCell = true
+        locationManager.startUpdatingLocation()
     }
 
     

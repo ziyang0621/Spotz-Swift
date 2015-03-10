@@ -12,26 +12,30 @@ import Foundation
 
 class MapInterfaceController: WKInterfaceController {
     
-    var location: CLLocationCoordinate2D?
-
     @IBOutlet var map: WKInterfaceMap!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         if let ctx = context as? [String: Double] {
-            location = CLLocationCoordinate2DMake(ctx["lat"]!, ctx["lng"]!)
-            
-            let span = MKCoordinateSpan(
-                latitudeDelta: 0.005,
-                longitudeDelta: 0.005
-            )
-            
-            let region = MKCoordinateRegion(center: location!, span: span)
-            
-            map.setRegion(region)
-            
-            map.addAnnotation(location!, withPinColor: WKInterfaceMapPinColor.Red)
+            var location = CLLocationCoordinate2DMake(ctx["placeLat"]!, ctx["placeLng"]!)
+            var userLoc = CLLocationCoordinate2DMake(ctx["userLat"]!, ctx["userLng"]!)
+   
+            if location.latitude == userLoc.latitude && location.longitude == userLoc.longitude {
+                let span = MKCoordinateSpan(
+                    latitudeDelta: 0.005,
+                    longitudeDelta: 0.005
+                )
+                let region = MKCoordinateRegion(center: location, span: span)
+                map.setRegion(region)
+                map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
+            } else {
+                map.addAnnotation(userLoc, withPinColor: WKInterfaceMapPinColor.Purple)
+                map.addAnnotation(location, withPinColor: WKInterfaceMapPinColor.Green)
+                let newDistance = CLLocation(latitude: userLoc.latitude, longitude: userLoc.longitude).distanceFromLocation(CLLocation(latitude: location.latitude, longitude: location.longitude))
+                let region = MKCoordinateRegionMakeWithDistance(userLoc, 2.5 * newDistance, 2.5 * newDistance)
+                map.setRegion(region)
+            }
         }
     }
 
